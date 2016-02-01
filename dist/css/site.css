@@ -1,0 +1,37 @@
+.bg1 {
+  background-color: #125688;
+}
+
+.bg2 {
+  background-color: #4b4f54;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.b1 {
+  background-color: #4b4f54;
+  border: none;
+}
+
+a {
+  color: #125688;
+}
+
+/* unvisited link */
+a:visited {
+  color: #125688;
+}
+
+/* visited link */
+a:hover {
+  color: #125688;
+}
+
+/* mouse over link */
+a:active {
+  color: #125688;
+}
+
+/* selected link */
+/*MD*/

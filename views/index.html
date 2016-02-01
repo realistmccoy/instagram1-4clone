@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <title>Disstress</title>
+    <meta charset="utf-8">
+    <base href="/"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.0/angular-material.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <!-- MD - ICONs -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/site.css" charset="utf-8"/>
+
+  </head>
+
+  <body ng-controller="GlobalController as gc">
+    <div>
+      <ng-view></ng-view>
+      <br />
+      <!-- <a href="welcome"></a> -->
+      <div flex="66" class="bg2" style="color: white" layout layout-align="center" >
+        <button class="b1">
+          <a href="/">
+            <i class="material-icons" style="color: white">home</i>
+          </a>
+        </button>
+        <button class="b1">
+          <a href="/explore">
+            <i class="material-icons" style="color: white">cloud_circle</i>
+          </a>
+        </button>
+        <button class="b1">
+          <a href="/camera">
+            <i class="material-icons" style="color: white; background-color: #125688">photo_camera</i>
+          </a>
+        </button>
+        <button class="b1">
+          <a href="/activity">
+            <i class="material-icons" style="color: white">local_pizza</i>
+          </a>
+        </button>
+        <button class="b1">
+          <a href="/profile">
+            <i class="material-icons" style="color: white">person</i>
+          </a>
+        </button>
+        <a href="/userComment"></a>
+      </div>
+
+      <a ng-href="/register" ng-hide="gc.status._id !== null">Register</a>
+      <a ng-href="/login" ng-hide="gc.status._id !== null">Login</a>
+      <button ng-click="gc.logout()" ng-show="gc.status._id !== null">Logout</button>
+
+
+    </div>
+    <!-- <h1>{{gc.status}}</h1> -->
+    <script src="/scripts/angular/angular.min.js"></script>
+
+    <script type="text/javascript" src="//api.filepicker.io/v2/filepicker.js"></script>
+    <!-- download from https://raw.githubusercontent.com/filepicker/filepicker-angular/develop/dist/angular_filepicker.min.js -->
+    <script src="/javascript/angular_filepicker.min.js"></script>
+
+    <script src="/scripts/angular-route/angular-route.min.js"></script>
+    <script src="/scripts/angular-resource/angular-resource.min.js"></script>
+
+    <script src="/js/jsBundle.min.js"></script>
+
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+    <script src="/scripts/angular-animate/angular-animate.min.js"></script>
+    <!-CSS animate  -->
+
+    <!--
+    <script src="/javascript/app.js"></script>
+    <script src="/javascript/services/HomeService.js"></script>
+    <script src="/javascript/services/UserService.js"></script>
+    <script src="/javascript/services/pickerService.js"></script>
+    <script src="/javascript/services/UcService.js"></script>
+    <script src="/javascript/services/likePicturesService.js"></script>
+
+    <script src="/javascript/services/HTTPFactory.js"></script>
+    <script src="/javascript/controllers/HomeController.js"></script>
+    <script src="/javascript/controllers/UserController.js"></script>
+    <script src="/javascript/controllers/GlobalController.js"></script>
+    <script src="/javascript/controllers/pickerController.js"></script>
+    <script src="/javascript/controllers/UcController.js"></script>
+    <script src="/javascript/controllers/activityController.js"></script>
+      <script src="/javascript/controllers/HomeComments.js"></script> -->
+
+  </body>
+
+</html>
