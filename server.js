@@ -31,7 +31,7 @@ var UcRoute = require('./routes/UcRoute');
 app.use('/comments', UcRoute);
 var likeRoutes = require('./routes/likeRoutes');
 app.use('/likePictures', likeRoutes);
-app.use(express.static('./public'));
+app.use(express.static('./dist'));
 app.use('/scripts', express.static('bower_components'));
 app.get('/*', function (req, res, next) {
     if (/.js|.html|.css|templates|javascript/.test(req.path))

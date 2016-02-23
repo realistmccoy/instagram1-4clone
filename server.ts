@@ -50,7 +50,7 @@ let likeRoutes = require('./routes/likeRoutes');
 app.use('/likePictures', likeRoutes);
 
 
-app.use(express.static('./public'));
+app.use(express.static('./dist'));
 app.use('/scripts', express.static('bower_components'));
 
 

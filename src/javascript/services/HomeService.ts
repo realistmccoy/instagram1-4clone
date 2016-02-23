@@ -1,6 +1,7 @@
 "use strict";
 namespace app.Services {
   export class HomeService {
+    
 public PickerRes;
 public BookResource;
     public  getAll(){
